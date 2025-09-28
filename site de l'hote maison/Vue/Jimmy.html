@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jimmy Rancourt - L'Hôte Maison</title>
+        <link rel="stylesheet" href="..\Css\Affichage.css">
+        <link rel="stylesheet" href="..\Css\en-tete.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="..\Css\darkmode.css">
+        <script src="..\Javascript\darkmode.js" defer></script>
+        <script src="..\Javascript\script.js" defer></script>
+    </head>
+    <body>
+  <!-- Haut de la Page-->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <div class="logo-titre">
+      <a href="Jimmy.html"><img src="..\Images\logo.webp" alt="Logo L'hote Maison"></a>
+      <div class="texte-titre">
+        <a href="accueil.html" style="color: #ffd700; text-decoration: none;">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+        </a>
+      </div>
+    </div>
+
+
+    <nav id="main-nav" class="nav-bar">
+      <div class="nav-wrapper">
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Conseil_dadministration.html">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="#Partenaires">Partenaires</a>
+              <a href="#Bilans annuels">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#bourse">Bourse JJR</a></li>
+        <li><a href="#activites">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="#Activités sportives">Activités sportives</a>
+                <a href="#Ateliers d’improvisation">Ateliers d’improvisation</a>
+                <a href="#Camp d’accueil PPS">Camp d’accueil PPS</a>
+                <a href="#Conseil des jeunes">Conseil des jeunes</a>
+                <a href="#périodes libres">Périodes libres</a>
+                <a href="#Conseil des jeunes">Projet de sérigraphie</a>
+                <a href="#Projet Musical">Projet Musical</a>
+                <a href="#Projet Naos">Projet Naos</a>
+                <a href="#Soirées sexo">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="#jeunes">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="#Ressources jeunes">Ressources jeunes</a>
+            <a href="#Fiche d’identification">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="#parents">Parents et Ressources</a></li>
+        <li><a href="#emplois">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page-->
+
+  
+<h1 style="text-align: center;" class="text-note">Hommage pour Jimmy Rancourt</h1><hr><br><br><br><br>
+
+<section>
+    <!-- Jimmy Rancourt -->
+    <h2 class="text-note">Jimmy Rancourt</h2>
+    <hr>
+    <div class="grid Calendrier">
+      <div class="card">
+        <!-- Jimmy Rancourt image -->
+        <img src="..\Images\Jimmy.jpg" alt="Calendrier" width="500" height="auto">
+        <h3>1979 - 2024</h3>
+    </div></div>
+</section>
+
+
+
+
+
+    <!-- bas de la Page-->
+     <hr>
+  <style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org" class="text-link">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon" class="fa-brands fa-tiktok"></i></a>
+          </p>
+            <!-- fin bas de la Page-->      
+    </body>
+</html>

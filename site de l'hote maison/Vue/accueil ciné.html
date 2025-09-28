@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="no-js no-svg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - L'Hôte Maison</title>
+  <link rel="stylesheet" href="..\Css\Affichage.css">
+  <link rel="stylesheet" href="..\Css\en-tete.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="..\Css\darkmode.css">
+  <script src="..\Javascript\darkmode.js" defer></script>
+  <script src="..\Javascript\script.js" defer></script>
+</head>
+
+<body>
+  <!-- Haut de la Page-->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <a href="accueil.html" style="color: #ffd700; text-decoration: none;"><div class="logo-titre">
+      <img src="..\Images\logo.webp" alt="Logo L'hote Maison">
+      <div class="texte-titre">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+      </div>
+    </div></a>
+
+
+    <nav id="main-nav" class="nav-bar">
+      <div class="nav-wrapper">
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="#apropos">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#Conseil d’administration">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="#Partenaires">Partenaires</a>
+              <a href="#Bilans annuels">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#bourse">Bourse JJR</a></li>
+        <li><a href="#activites">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="#Activités sportives">Activités sportives</a>
+                <a href="#Ateliers d’improvisation">Ateliers d’improvisation</a>
+                <a href="#Camp d’accueil PPS">Camp d’accueil PPS</a>
+                <a href="#Conseil des jeunes">Conseil des jeunes</a>
+                <a href="#périodes libres">Périodes libres</a>
+                <a href="#Conseil des jeunes">Projet de sérigraphie</a>
+                <a href="#Projet Musical">Projet Musical</a>
+                <a href="#Projet Naos">Projet Naos</a>
+                <a href="#Soirées sexo">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="#jeunes">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="#Ressources jeunes">Ressources jeunes</a>
+            <a href="#Fiche d’identification">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="#parents">Parents et Ressources</a></li>
+        <li><a href="#emplois">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page-->
+
+
+  <h2>Voici notre programmation des activités de la semaine :</h2><br>
+
+  <section>
+    <!-- Calendrier -->
+    <h2 class="text-note">Calendrier de septembre</h2>
+    <hr>
+    <div class="grid Calendrier">
+      <div class="card">
+        <!-- Calendrier image -->
+        <img src="..\Images\Calendrier.webp" alt="Calendrier">
+        <h3>Calendrier du mois</h3>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2 class="text-note">L’Hôte Maison, c’est <u>TA</u> maison de jeunes !</h2><hr><br>
+    <h3 style="text-align: center;">Bonjour à toi, toi et toi, oui toi très cher être-humain !</h3>
+    <div class="texte-accueil"><p>Bienvenue sur le site internet de l’Hôte Maison, une maison de jeunes située dans le quartier La Petite-Patrie de Montréal, plus précisément dans le centre Père-Marquette.</p>
+    <p>Avant tout, l’Hôte Maison est un lieu de rencontre pour les jeunes de 12 à 17 ans qui ont le goût de participer à des activités structurées et encadrées dans un environnement sécuritaire et respectueux de chacun et chacune.  C’est 
+      <u>LA</u>
+       place pour développer des projets et expérimenter des activités variées pour se découvrir de nouvelles passions. D’ailleurs, en naviguant sur notre site, tu pourras en apprendre davantage sur l’organisme, ses activités, son équipe et ses multiples projets.
+    </p>
+    <p>Rends-toi sur notre chaîne  <a class="text-link" href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg">Youtube</a> pour un aperçu de nos activités 🙂</p></div>
+    <br>
+    <!-- vidéo presentation -->
+    <div class="cinema-style">
+      <iframe
+        src="https://www.youtube.com/embed/sEkxlmkSwIA"
+        title="Vidéo YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    </div>
+    
+    <br><br><br>
+
+  </section>
+  <section>
+    <p style="text-align: center;">Tenez-vous informé.e.s à la page <em>d’<a class="text-link" href="#Nouvelle">Actualités</a></em> ou sur <em><a class="text-link" href="https://www.google.com/search?q=l%27h%C3%B4te+maison+&gs_lcp=CgZwc3ktYWIQAzIGCAAQFhAeMgIIJjoKCAAQxwEQrwEQQzoICAAQsQMQgwE6BQgAELEDOgsIABCxAxDHARCjAjoCCAA6BAgAEEM6CggAEMcBEKMCEEM6CAguELEDEIMBOgsIABCxAxDHARCvAToCCC46CAgAEMcBEK8BUMQXWIYsYK0taANwAXgAgAFriAHcC5IBBDE0LjOYAQCgAQGqAQdnd3Mtd2l6wAEB">Google</a></em> 😉</p>
+    <p style="text-align: center;">Suis-nous sur <em><a class="text-link" href="">Facebook</a></em>, <em><a class="text-link" href="https://www.instagram.com/lhotemaison/">Instagram</a></em> ou <em><a class="text-link" href="https://www.tiktok.com/@lhotemaison?lang=fr">Tik tok</a></em> pour être au courant de tout!</p>
+    <p style="text-align: center;">Pour en savoir plus sur l’Hôte Maison, visite aussi sa chaîne <em><a class="text-link" href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg?view_as=subscriber">Youtube</a>.</em></p>
+    <br>
+    <h2 class="text-note">COMMENTAIRES ET AVIS </h2><hr>
+    <div class="grid commentairesEtAvis">
+      <div class="card">
+        <!-- Calendrier image -->
+        <img src="..\Images\COMMENTAIRES-ET-AVIS.webp" alt="COMMENTAIRES ET AVIS" width="650" height="auto">
+    </div></div>
+  </section>
+<br><br>
+    <!-- bas de la Page-->
+     <hr>
+  <style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org" class="text-link">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon" class="fa-brands fa-tiktok"></i></a>
+          </p>
+            <!-- fin bas de la Page-->  
+</html>

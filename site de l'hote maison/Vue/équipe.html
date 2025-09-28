@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Équipe - L'Hôte Maison</title>
+  <link rel="stylesheet" href="..\Css\Affichage.css">
+  <link rel="stylesheet" href="..\Css\en-tete.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="..\Css\darkmode.css">
+  <script src="..\Javascript\darkmode.js" defer></script>
+  <script src="..\Javascript\script.js" defer></script>
+</head>
+
+<body>
+  <!-- Haut de la Page-->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <div class="logo-titre">
+      <a href="Jimmy.html"><img src="..\Images\logo.webp" alt="Logo L'hote Maison"></a>
+      <div class="texte-titre">
+        <a href="accueil.html" style="color: #ffd700; text-decoration: none;">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+        </a>
+      </div>
+    </div>
+
+
+    <nav id="main-nav" class="nav-bar">
+      <div class="nav-wrapper">
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Conseil_dadministration.html">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="#Partenaires">Partenaires</a>
+              <a href="#Bilans annuels">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#bourse">Bourse JJR</a></li>
+        <li><a href="#activites">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="#Activités sportives">Activités sportives</a>
+                <a href="#Ateliers d’improvisation">Ateliers d’improvisation</a>
+                <a href="#Camp d’accueil PPS">Camp d’accueil PPS</a>
+                <a href="#Conseil des jeunes">Conseil des jeunes</a>
+                <a href="#périodes libres">Périodes libres</a>
+                <a href="#Conseil des jeunes">Projet de sérigraphie</a>
+                <a href="#Projet Musical">Projet Musical</a>
+                <a href="#Projet Naos">Projet Naos</a>
+                <a href="#Soirées sexo">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="#jeunes">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="#Ressources jeunes">Ressources jeunes</a>
+            <a href="#Fiche d’identification">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="#parents">Parents et Ressources</a></li>
+        <li><a href="#emplois">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page-->
+
+  <!-- Direction -->
+  <section>
+    <h2>Direction</h2>
+    <hr>
+    <div class="grid direction">
+      <div class="card">
+        <!-- Étienne Vézina -->
+        <img src="../Images/étienne.webp" alt="Étienne Vézina">
+        <h3>Étienne Vézina</h3>
+        <p>Directeur général</p>
+        <p><a href="mailto:etiennev@lhotemaison.org" target="_blank" style="color: blue;">etiennev@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">J’ai toujours été passionné par les jeux, la musique et les sciences humaines. Dans mon travail à l’Hôte Maison, j’arrive à combiner ces trois sphères de ma vie afin d’avoir un impact positif sur le parcours des jeunes que j’ai le bonheur d’accompagner.</p>
+      </div>
+
+      <div class="card">
+        <!-- Patrick Julien -->
+        <img src="../Images/patrick.webp" alt="Patrick Julien">
+        <h3>Patrick Julien</h3>
+        <p>Coordinateur·trice</p>
+        <p><a href="mailto:patrickj@lhotemaison.org" target="_blank" style="color: blue;">patrickj@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">Personne à l’écoute, je suis passionné.e par tout ce qui se rattache à la culture et à l’expression, tel que l’impro, la musique, le jeu de rôles, etc. Je suis moi-même un·e ancien·ne jeune qui est venu·e pendant 6 ans!
+        <br>J’espère y redonner autant que j’y ai appris. Je souhaite permettre aux jeunes de développer leur créativité et de s’épanouir au sein de notre magnifique maison de jeunes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe d’animation -->
+  <section>
+    <h2>Équipe d’animation</h2>
+    <hr>
+    <div class="grid animation">
+      <div class="card">
+        <!-- Emmanuell Clews -->
+        <img src="../Images/emmanuell.webp" alt="Emmanuell Clews">
+        <h3>Emmanuell Clews</h3>
+        <p>Intervenant·e-Animateur·ice</p>
+        <p><a href="mailto:emmanuellc@lhotemaison.org" target="_blank" style="color: blue;">emmanuellc@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">Hey hey hey! Moi c’est Emmanuell. J’ai fréquenté la maison de jeunes entre 2017 et 2021, passant par représentant·e de jeune et capitaine de l’équipe d’impro. J’ai été employé·e d’été en 2023 et 2025, et je suis maintenant officiellement à temps plein! J’ai une formation professionnelle en théâtre musical, mais je m’intéresse beaucoup aux relations d’aide. Arrête de lire ma bio, viens me rencontrer pendant nos heures d’ouverture!</p>
+      </div>
+
+      <div class="card">
+        <!-- Manoushka Dumarsais -->
+        <img src="../Images/manoushka.webp" alt="Manoushka Dumarsais">
+        <h3>Manoushka Dumarsais</h3>
+        <p>Intervenante-Animatrice</p>
+        <p><a href="mailto:manoushkad@lhotemaison.org" target="_blank" style="color: blue;">manoushkad@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">Salut ! Moi, c’est Manoushka, et je suis ravie de faire votre connaissance. Originaire de Montréal et diplômée en éducation spécialisée, je suis passionnée par l’intervention auprès des jeunes et toujours en quête de nouvelles expériences et de défis. J’aime apprendre des autres, et vous pouvez venir discuter de tout et de rien avec moi, sans tabous. J’ai très hâte d’échanger avec vous ! À bientôt !</p>
+      </div>
+      
+      <div class="card">
+        <!-- Nolann Cabana -->
+        <a href="https://foliomanagement.com/en/models/nolann" target="_blank">
+          <img src="../Images/nolann.webp" alt="Nolann Cabana">
+        </a>
+        <h3>Nolann Cabana</h3>
+        <p>Animateur</p>
+        <p><a href="mailto:nolannc@lhotemaison.org" target="_blank" style="color: blue;">nolannc@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">Salut!! Moi c’est Nolann, je suis en formation continue de la technique en travail social et je suis intervenant à l’Hôte Maison à temps partiel! J’adore les animés, la mode, le soccer et la musique. Venez me parler de tout et de rien, pas de tabou avec moi! Hâte d’apprendre à vous connaître! 🙂</p>
+      </div>
+
+      <div class="card">
+        <!-- Catherine Girard -->
+        <img src="../Images/Catherine.webp" alt="Catherine Girard">
+        <h3>Catherine Girard</h3>
+        <p>Animatrice</p>
+        <p><a href="mailto:animation@lhotemaison.org" target="_blank" style="color: blue;">animation@lhotemaison.org</a></p><hr>
+        <!-- Déscription -->
+        <p class="bio">Salut!!! Je m’appelle Catherine et je suis animatrice à temps partiel à l’Hôte Maison! J’étudie en psycho-éducation et je suis là pour t’écouter et trouver des solutions avec toi à tous les petits (ou gros) problèmes de la vie! Sinon, je suis une joueuse de volley-ball, j’adore cuisiner, faire de la peinture aquarelle et jouer à des jeux de société :) Hâte de vous rencontrer!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stagiaires -->
+  <section>
+    <h2>Stagiaires</h2>
+    <hr>
+    <div class="grid stagiaires">
+      <div class="card">
+        <!-- Lylia Boudouni -->
+        <img src="..\Images\lylia.jpg" width="247" height="auto" alt="Lylia Boudouni">
+        <h3>Lylia Boudouni</h3>
+        <p>Stagiaire en criminologie</p><hr>
+        <!-- Déscription -->
+        <p class="bio">Salut 🙂 Je m’appelle Lylia et je suis stagiaire à l’Hôte Maison jusqu’à la fin de l’année ! J’étudie en criminologie et j’aimerais accompagner les jeunes vers une trajectoire de vie saine, sécuritaire et épanouissante. En parallèle, je suis autrice pour un studio d’animation, étant moi même une grande passionnée d’art et d’animation (surtout japonaise), mais aussi de danse, peinture, musique et surtout des voyages ! J’ai hâte d’échanger avec vous sur tout ça et bien plus encore!</p>
+      </div>
+      <div class="card">
+        <!-- Alyssa Petit -->
+        <img src="..\Images\Alyssa.webp" width="247" height="auto" alt="Alyssa Petit">
+        <h3>Alyssa Petit</h3>
+        <p>Stagiaire en sexologie</p><hr>
+        <!-- Déscription -->
+        <p class="bio">Coucou, moi c’est Alyssa. Je suis stagiaire à l’Hôte maison en sexologie. Ça veut dire quoi ça? Ça veut dire que tu peux me parler de tes questionnements par rapport à tes relations (que ce soit amicales, amoureuses et autres), à ton orientation amoureuse/sexuelle, ton identité et tous autres sujets. Je suis aussi passionnée de danse, d’escalade, de lecture, de jeux de société et de jeux vidéo. J’ai bien hâte de te rencontrer pour parler et s’amuser!</p>
+      </div>
+      <div class="card">
+        <!-- Marianne Beaulieu -->
+        <img src="..\Images\Marianne.jpeg" width="247" height="auto" alt="Marianne Beaulieu">
+        <h3>Marianne Beaulieu</h3>
+        <p>Stagiaire en sexologie</p><hr>
+        <!-- Déscription -->
+        <p class="bio">Salut! Je m’appelle Marianne et je rejoins l’équipe de L’Hôte Maison comme stagiaire en sexologie jusqu’à la fin du mois d’avril. Je suis là pour t’écouter et te soutenir si tu en ressens le besoin, et il me fera plaisir de répondre à toutes tes questions sur la sexualité ou sur les relations! J’adore la danse, les jeux de société, la cuisine et le bricolage. J’ai bien hâte d’apprendre à vous connaître! 🙂</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Partenaires -->
+  <section>
+    <h2>Partenaires</h2>
+    <hr>
+    <div class="grid partenaires">
+      <div class="card">
+        <!-- Suzanne Gagnon -->
+        <img src="..\Images\suzanne.webp" alt="Suzanne Gagnon">
+        <h3>Suzanne Gagnon</h3>
+        <p>Spécialiste en activités cliniques</p><hr>
+        <!-- Déscription -->
+        <p class="bio">Hey Hey Hey! Connaissez-vous SuzanneGagnon?<br>Eh bien… LA VOICI!!!! C’EST ELLE!!!!!!!<br>Suzanne a été administratrice à l’Hôte Maison pendant plus de 20 ans et… COUP DE THÉÂTRE; en 2022… tel un Mario Lemieux (ils ont un dos semblable je crois!) qui revient au jeu; elle revient sur le plancher ensuite!<br>est criminologue et elle a dirigé une équipe-clinique longuement durant sa carrière… ça aide! Même que ça aide pas mal hein!<br>Bref… on dit que LE CRIME NE PAIE PAS mais avoir une -CRIMINO dans l’équipe… ça vaut de… l’OR! K BYE!</p>
+      </div>
+      <div class="card">
+        <!-- Angélique Denis -->
+        <img src="..\Images\Angélique.webp" width="247" height="auto" alt="Angélique Denis">
+        <h3>Angélique Denis</h3>
+        <p>Technicienne comptable</p><hr>
+        <!-- Déscription -->
+        <p class="bio">Technicienne comptable depuis 20 ans, je travaille avec beaucoup d’OBNL<br>J’aime mon travail et offrir mes services et mes conseils. J’aime m’investir et m’impliquer.</p>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <!-- bas de la Page-->
+     <hr>
+  <style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org" class="text-link">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon" class="fa-brands fa-tiktok"></i></a>
+          </p>
+            <!-- fin bas de la Page-->
+</body>
+</html>

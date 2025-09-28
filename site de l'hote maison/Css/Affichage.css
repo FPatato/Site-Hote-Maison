@@ -1,0 +1,144 @@
+/* 🌐 BASE */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;  /*121212*/
+  color: #333;
+  margin-top: 130px; /* ajuste selon la hauteur de ta bannière */
+  overflow-x: hidden;
+}
+
+i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 10px auto 30px;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+/* 🧱 LAYOUT GRILLE */
+.grid {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.direction {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.animation,
+.stagiaires,
+.partenaires,
+.administration {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* 🧩 COMPOSANTS */
+.card {
+  background: rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 0.95em;
+  line-height: 1.5;
+  font-family: Times New Roman;
+}
+
+/* 📱 Responsive override */
+@media screen and (max-width: 945px) {
+  body {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 790px) {
+  body {
+    margin-top: 0px;
+  }
+}
+
+.texte-accueil {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.texte-accueil p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+/*1*/
+.video-container {
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(0, 0, 106), yellow);
+  border-radius: 15px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/*2*/
+.cinema-style {
+  background: #111;
+  padding: 25px;
+  border: 8px solid #333;
+  border-radius: 12px;
+  max-width: 850px;
+  margin: 30px auto;
+}
+.cinema-style iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 8px;
+}

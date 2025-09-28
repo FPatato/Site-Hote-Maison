@@ -1,0 +1,77 @@
+/* 🌞 Mode clair */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.text-link {
+  color: blue; /* rouge foncé */
+}
+
+.text-note {
+  color: rgb(0, 0, 106);
+}
+
+/* 🌙 Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .text-link {
+  color: lightblue; /* rouge clair */
+}
+
+body.dark-mode .text-note {
+  color: yellow;
+}
+
+body.dark-mode .card {
+  background: rgb(41, 41, 41);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px gray;
+}
+
+body.dark-mode .nav-bar a:hover {
+  color: rgb(0, 0, 158);
+  border-bottom: 2px solid rgb(0, 0, 158);
+}
+
+body.dark-mode .nav-bar {
+  background-color: #ffd700;
+}
+
+body.dark-mode .site-header {
+  color: rgb(0, 0, 158);
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+/* 🎨 Icône toggle */
+#toggleIcon {
+  cursor: pointer;
+  font-size: 28px;
+  color: yellow; /* icône jaune */
+  transition: transform 0.3s ease;
+}
+
+#toggleIcon:hover {
+  transform: rotate(20deg);
+}
+
+#linkIcon {
+  color: rgb(0, 0, 106);
+}
+
+body.dark-mode #toggleIcon {
+  color: rgb(0, 0, 158);
+}
+body.dark-mode #linkIcon {
+  color: yellow;
+}
+
+#linkIcon:hover {
+  transform: rotate(20deg);
+}

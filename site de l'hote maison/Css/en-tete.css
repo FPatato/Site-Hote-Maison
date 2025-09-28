@@ -1,0 +1,228 @@
+/* 🏞️ EN-TÊTE */
+.logo-titre {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.logo-titre img {
+  max-height: 80px;
+  width: auto;
+}
+
+.site-header {
+  color: yellow;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo-titre {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-titre h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.logo-titre p {
+  font-size: 1.2em;
+}
+
+/* 📌 NAVIGATION */
+.nav-bar {
+  background-color: rgb(0, 0, 106);
+  padding: 20px 0;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* STICKY NAVBAR */
+.sticky,
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+
+
+/* Conteneur du slideshow */
+.slideshow {
+  position: absolute;   /* au-dessus du header */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;         /* prend tout le header */
+  overflow: hidden;
+  z-index: 1;     
+  align-items: center;      /* derrière logo + nav */
+  max-height: 350px; /* ajuste selon ton design */
+}
+
+/* Images */    
+.slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* remplit le conteneur sans déformer */
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slideshow .slide.active {
+  opacity: 1;
+}
+
+/* Navbar et logo au-dessus */
+.logo-titre {
+  position: relative;
+  z-index: 2;   /* au-dessus du slideshow */
+}
+.nav-bar {
+    z-index: 2; 
+}
+
+/* 📱 RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar li {
+    margin: 10px 0;
+  }
+
+  .nav-bar a {
+    font-size: 5em;
+  }
+}
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      user-select: none;
+    }
+
+    .arrow {
+      font-size: 0.8em;
+      transition: transform 0.2s ease;
+    }
+
+    /* Contenu du menu */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 180px;
+      margin-top: 5px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Quand actif */
+    .show {
+      display: block;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+
+/* Structure principale */
+.nav-wrapper {
+  display: flex;
+  justify-content: center; /* centre le menu */
+  align-items: center;
+  position: relative;
+}
+
+/* Menu centré */
+.nav-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  gap: 30px;
+}
+
+/* Soleil à droite */
+.nav-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-right i {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-right i:hover {
+  color: #ffd700;
+}
