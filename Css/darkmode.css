@@ -29,9 +29,6 @@ body.dark-mode .text-note {
 
 body.dark-mode .card {
   background: rgb(41, 41, 41);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
   box-shadow: 0 0 10px gray;
 }
 
@@ -40,19 +37,11 @@ body.dark-mode .nav-bar a:hover {
   border-bottom: 2px solid rgb(0, 0, 158);
 }
 
-body.dark-mode .nav-bar {
-  background-color: #ffd700;
-}
-
 body.dark-mode .site-header {
   color: rgb(0, 0, 158);
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
 }
 /* 🎨 Icône toggle */
 #toggleIcon {
-  cursor: pointer;
-  font-size: 28px;
   color: yellow; /* icône jaune */
   transition: transform 0.3s ease;
 }
@@ -65,9 +54,6 @@ body.dark-mode .site-header {
   color: rgb(0, 0, 106);
 }
 
-body.dark-mode #toggleIcon {
-  color: rgb(0, 0, 158);
-}
 body.dark-mode #linkIcon {
   color: yellow;
 }

@@ -1,141 +1,173 @@
-/* 🏞️ EN-TÊTE */
-.logo-titre {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  padding-bottom: 10px;
-  padding-top: 10px;
+/* Reset global */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
 }
 
-.logo-titre img {
-  max-height: 80px;
-  width: auto;
-}
-
+/* Header */
 .site-header {
-  color: yellow;
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.logo-titre {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.logo-titre h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
-}
-
-.logo-titre p {
-  font-size: 1.2em;
-}
-
-/* 📌 NAVIGATION */
-.nav-bar {
-  background-color: rgb(0, 0, 106);
-  padding: 20px 0;
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-  box-sizing: border-box;
-  z-index: 1000;
-}
-
-.nav-bar ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-bar li {
-  margin: 0 15px;
-}
-
-.nav-bar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s, border-bottom 0.3s;
-}
-
-.nav-bar a:hover {
-  color: #ffd700;
-  border-bottom: 2px solid #ffd700;
-}
-
-/* STICKY NAVBAR */
-.sticky,
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  z-index: 1000;
-}
-
-
-
-/* Conteneur du slideshow */
+/* Slideshow */
 .slideshow {
-  position: absolute;   /* au-dessus du header */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;         /* prend tout le header */
-  overflow: hidden;
-  z-index: 1;     
-  align-items: center;      /* derrière logo + nav */
-  max-height: 350px; /* ajuste selon ton design */
+    position: relative; /* dans le flux normal */
+    width: 100%;
+    height: 350px; /* force la hauteur pour que les slides s'affichent */
+    overflow: hidden;
+    z-index: 1;
 }
 
-/* Images */    
 .slideshow .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* remplit le conteneur sans déformer */
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+    position: absolute; /* nécessaire pour ton JS */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;  /* supprime l'espace blanc sous l'image */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .slideshow .slide.active {
-  opacity: 1;
+    opacity: 1;
 }
 
-/* Navbar et logo au-dessus */
+/* Logo et titre */
 .logo-titre {
-  position: relative;
-  z-index: 2;   /* au-dessus du slideshow */
-}
-.nav-bar {
-    z-index: 2; 
-}
-
-/* 📱 RESPONSIVE MOBILE */
-@media (max-width: 600px) {
-  .nav-bar ul {
-    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    display: flex;
     align-items: center;
-  }
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 0;
+    background: #1b183e;
+}
 
-  .nav-bar li {
+.logo-titre img {
+    max-height: 80px;
+    width: auto;
+}
+
+.logo-titre h1 {
+    font-size: 2.5em;
     margin: 10px 0;
-  }
+}
 
-  .nav-bar a {
-    font-size: 5em;
-  }
+.logo-titre div {
+    font-size: 1.2em;
+}
+
+/* Navbar */
+.nav-bar {
+    position: relative; /* le JS ajoutera .fixed */
+    width: 100%;
+    background-color: #292460;
+    padding: 15px 0;
+    z-index: 2;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    margin-top: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1010; /* au-dessus de la navbar */
+}
+
+.show {
+    display: block;
+}
+
+/* Icone à droite */
+.nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-right i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-right i:hover {
+    color: #ffd700;
+}
+
+/* Classes gérées par le JS */
+.sticky,
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Pour que le contenu principal ne soit pas caché par la navbar fixe */
+body .main-content {
+    margin-top: 130px; /* hauteur approximative de logo + navbar */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar li {
+        margin: 10px 0;
+    }
 }
 
 .dropdown {
@@ -152,6 +184,7 @@
     }
 
     .arrow {
+        color: #ffd700;
       font-size: 0.8em;
       transition: transform 0.2s ease;
     }
@@ -188,41 +221,3 @@
     .rotate {
       transform: rotate(180deg);
     }
-
-/* Structure principale */
-.nav-wrapper {
-  display: flex;
-  justify-content: center; /* centre le menu */
-  align-items: center;
-  position: relative;
-}
-
-/* Menu centré */
-.nav-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  gap: 30px;
-}
-
-/* Soleil à droite */
-.nav-right {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav-right i {
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.nav-right i:hover {
-  color: #ffd700;
-}
