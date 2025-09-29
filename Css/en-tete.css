@@ -221,3 +221,8 @@ body .main-content {
     .rotate {
       transform: rotate(180deg);
     }
+
+    .card-section {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
