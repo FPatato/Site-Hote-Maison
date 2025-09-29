@@ -113,10 +113,11 @@ html, body {
     background-color: #fff;
     min-width: 180px;
     margin-top: 5px;
+    left: -123px; /* décale vers la gauche */
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     border: 1px solid #ccc;
     border-radius: 5px;
-    z-index: 1010; /* au-dessus de la navbar */
+    z-index: 1010;
 }
 
 .show {
@@ -245,7 +246,7 @@ body .main-content {
 }
 
 /* Responsive : afficher le bouton et dérouler le menu */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .menu-toggle {
     display: block;
     margin-bottom: 10px;
