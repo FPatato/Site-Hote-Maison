@@ -47,7 +47,8 @@ hr {
 .animation,
 .stagiaires,
 .partenaires,
-.administration {
+.administration,
+.LogoPartenaires {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
