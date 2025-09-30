@@ -93,3 +93,10 @@ body.dark-mode #linkIcon {
     body.dark-mode .citation {
     color: #bdbcbc;
   }
+
+  .Naos {
+    color: green;
+  }
+  body.dark-mode .Naos {
+    color: lightgreen;
+  }
