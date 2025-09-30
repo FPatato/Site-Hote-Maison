@@ -89,3 +89,7 @@ body.dark-mode #linkIcon {
     body.dark-mode .dropdown-content a:hover {
       background-color: rgb(47, 47, 47);;
     }
+
+    body.dark-mode .citation {
+    color: #bdbcbc;
+  }
