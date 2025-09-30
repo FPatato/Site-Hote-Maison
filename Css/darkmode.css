@@ -5,8 +5,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.text-link {
-  color: blue; /* rouge foncé */
+.text-link a {
+  color: blue;
 }
 
 .text-note {
@@ -19,8 +19,13 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
-body.dark-mode .text-link {
-  color: lightblue; /* rouge clair */
+body.dark-mode .text-link a {
+  color: lightblue;
+}
+
+body.dark-mode .text-link a:hover {
+  color:red;
+  border-bottom: 2px solid red;
 }
 
 body.dark-mode .text-note {
@@ -30,11 +35,6 @@ body.dark-mode .text-note {
 body.dark-mode .card {
   background: rgb(41, 41, 41);
   box-shadow: 0 0 10px gray;
-}
-
-body.dark-mode .nav-bar a:hover {
-  color: rgb(0, 0, 158);
-  border-bottom: 2px solid rgb(0, 0, 158);
 }
 
 body.dark-mode .site-header {
