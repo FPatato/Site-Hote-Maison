@@ -171,3 +171,9 @@ hr {
     color: #ffd700;
     text-decoration: none;
   }
+
+  .citation {
+    color: #666666;
+    font-size: 1.125rem;
+    font-style: italic;
+  }
