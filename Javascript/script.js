@@ -61,11 +61,13 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-bar ul');
+  const navBar = document.querySelector('.nav-bar');
 
   toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+    navBar.classList.toggle('nav-open');
   });
 });

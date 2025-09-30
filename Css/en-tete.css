@@ -261,7 +261,8 @@ body .main-content {
   }
 
   .nav-bar ul.open {
-    max-height: 500px;
+    max-height: 500px; /* ou plus selon ton contenu */
+    overflow: visible; /* devient visible uniquement quand ouvert */
   }
 }
 
