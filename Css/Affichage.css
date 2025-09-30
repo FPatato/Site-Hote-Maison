@@ -129,17 +129,19 @@ hr {
 }
 
 
-/*2*/
-.cinema-style {
-  background: #111;
-  padding: 25px;
-  border: 8px solid #333;
-  border-radius: 12px;
-  max-width: 850px;
-  margin: 30px auto;
-}
-.cinema-style iframe {
-  width: 100%;
-  height: 480px;
-  border-radius: 8px;
-}
+/*bas de page*/
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px; box-sizing: border-box;
+    }
+  }
