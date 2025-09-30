@@ -144,4 +144,15 @@ hr {
       grid-template-columns: 1fr;
       padding: 0 20px; box-sizing: border-box;
     }
+    .Calendrier,
+    .commentairesEtAvis,
+    .video-section {
+      padding: 0 20px; box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .video-section {
+      padding: 0 20px; box-sizing: border-box;
+    }
   }
