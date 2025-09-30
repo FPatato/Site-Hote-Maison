@@ -9,6 +9,10 @@ body {
   color: blue;
 }
 
+.text-link a:hover {
+  color: rgb(186, 1, 186);
+}
+
 .text-note {
   color: rgb(0, 0, 106);
 }
@@ -25,7 +29,6 @@ body.dark-mode .text-link a {
 
 body.dark-mode .text-link a:hover {
   color:red;
-  border-bottom: 2px solid red;
 }
 
 body.dark-mode .text-note {
