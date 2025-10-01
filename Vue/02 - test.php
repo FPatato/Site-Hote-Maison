@@ -1,6 +1,6 @@
 <?php
 // Configuration
-$to = "louca.cc26@email.com"; // Remplace par ton adresse
+$to = "louca.cc26@gmail.com"; // Remplace par ton adresse
 $subject = "Nouveau message du formulaire";
 
 // Sécurisation des données
