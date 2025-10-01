@@ -184,6 +184,13 @@ hr {
     text-decoration: none;
   }
 
+  .bouton_a:hover {
+    background-color: #ffd700;
+    border:2px rgb(0, 0, 106) solid;
+    color: rgb(0, 0, 106);
+    transition: 0.3s;
+  }
+
   .citation {
     color: #666666;
     font-size: 1.125rem;

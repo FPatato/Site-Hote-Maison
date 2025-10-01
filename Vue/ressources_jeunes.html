@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ressources jeunes - L'Hôte Maison</title>
+        <link rel="stylesheet" href="..\Css\Affichage.css">
+        <link rel="stylesheet" href="..\Css\en-tete.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="..\Css\darkmode.css">
+        <script src="..\Javascript\darkmode.js" defer></script>
+        <script src="..\Javascript\script.js" defer></script>
+    </head>
+    <body>
+  <!-- Haut de la Page -->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <div class="logo-titre">
+      <a href="Jimmy.html" style="padding-right: 20px;"><img src="..\Images\logo.webp" alt="Logo L'hote Maison"></a>
+      <div class="texte-titre">
+        <a href="accueil.html" style="color: #ffd700; text-decoration: none;">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+        </a>
+      </div>
+    </div>
+
+
+    <nav id="main-nav" class="nav-bar">
+        <button class="menu-toggle" aria-label="Menu mobile" style="text-align: center;">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Conseil_dadministration.html">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="partenaires.html">Partenaires</a>
+              <a href="Bilans_annuels.html">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="bourse_jjr.html">Bourse JJR</a></li>
+        <li><a href="Activités_projets.html">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="Activités_sportives.html">Activités sportives</a>
+                <a href="Ateliers_dimprovisation.html">Ateliers d’improvisation</a>
+                <a href="Page erreur.html">Camp d’accueil PPS</a>
+                <a href="Conseil_des_jeunes.html">Conseil des jeunes</a>
+                <a href="Périodes libres.html">Périodes libres</a>
+                <a href="sérigraphie.html">Projet de sérigraphie</a>
+                <a href="Projet Musical.html">Projet Musical</a>
+                <a href="Projet Naos.html">Projet Naos</a>
+                <a href="sexo.html">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="jeunes.html">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="ressources_jeunes.html">Ressources jeunes</a>
+            <a href="fiche_didentification.html">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="parents_ressources.html">Parents et Ressources</a></li>
+        <li><a href="emplois.html">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page -->
+
+  
+<h2 class="text-note">La Maison de Jeunes, c’est aussi là pour t’aider!</h2><hr>
+<section class="texte-accueil">
+    <p>À L’Hôte Maison, notre équipe est là pour t’écouter. Cependant, si tu as des besoin particulier qui dépassent nos compétences, voici une liste de quelques ressources dont tu peux bénéficier.</p>
+</section>
+
+<h2 class="text-note">Général:</h2><hr>
+<section class="texte-accueil text-link">
+    <ul>
+    <li><strong>Tel-jeunes:</strong> Tel-jeunes: Site internet abordant divers sujets touchant les jeunes et service de soutien.</li>
+    <li>☎️ <a href="tel:+18002632266">Téléphone (6h à 2h)‍</a></li>
+    <li><a href="https://www.teljeunes.com/experiencetj/comment-ca-marche">Texto (8h à 22h30)‍</a></li>
+    <li><a href="https://www.teljeunes.com/" target="_blank" rel="noopener">Chat (8h à 22h30)</a></li>
+</ul>
+<ul>
+    <li><strong>Jeunesse j’écoute: </strong>Site internet abordant divers sujets touchant les jeunes et service de soutien téléphonique et par texto. <a href="https://jeunessejecoute.ca/">https://jeunessejecoute.ca/</a> ou <a href="https://www.google.com/search?q=jeunesse+jecoute&amp;rlz=1C1CHBF_frCA887CA887&amp;oq=jeunesse+jecoute&amp;aqs=chrome..69i57j46i10i13i175i199i512j0i10i13i512l7.3772j1j15&amp;sourceid=chrome&amp;ie=UTF-8">1 800-668-6868</a></li><br>
+    <li><strong>Suicide Action Montréal:</strong> Service de soutien aux personnes en détresse et à leurs proches. Téléphone: 1 866 277-3553 SMS: 535353</li><br>
+    <li><strong>Info-Social:</strong> Ils donnent des conseils et peuvent répondre aux questions d’ordre psychosocial. Ils peuvent aussi, au besoin, te référer vers une ressource.
+    <br><br>Téléphone: 811</li><br>
+    <li><strong>CLSC Rosemont:</strong> Centre qui offre divers services notamment en ce qui concerne la santé et le soutien psychosocial. 2909, rue Rachel Est Montréal QC H1W 0A9
+    <br><br>514 524-3541</li>
+</ul>
+</section>
+
+<h2 class="text-note">Ressources d’hébergement:</h2><hr>
+<section class="texte-accueil text-link">
+    <ul>
+        <li><strong>En Marge 12-17 (1151 Rue Alexandre-DeSève, Montréal) 514-849-7117</strong></li>
+    </ul>
+    <p>Organisme 24/7 qui accueille les jeunes (12-17 ans) francophones et anglophones en situation de difficulté pour un hébergement temporaire. Acceuillant à la diversité de genre 🙂
+        <br><br><a href="http://www.enmarge1217.ca/">http://www.enmarge1217.ca/</a><br><br>
+        Tel. : 514-849-7117
+    </p>
+    <ul><li><strong>Le Bunker (les contacter par téléphone pour connaître l’adresse)</strong></li></ul>
+    <p>Maison d’hébergement d’urgence mixte ouvert toutes les nuits, 365 nuits par année. Pour les jeunes de 12 à 21 ans.
+        <br><br>Tel.: 514-524-0029
+    </p>
+    <ul><li><strong>Service d’hébergement Saint-Denis SHSD</strong> 15-20 ans</li></ul>
+</section>
+
+<h2 class="text-note">Distribution de matériel préventif :</h2><hr>
+<section class="texte-accueil text-link">
+    <p><strong>Plein milieu:</strong> Permet l’accès à du matériel stérile de consommation et de sécurisexe.</p>
+    <p><strong>Pact de rue:</strong> Ils distribuent du matériel stérile et on y récupère le matériel souillé. Nous distribuons aussi du matériel de protection afin de prévenir les ITSS. PACT de rue offre aussi à sa clientèle un service d’aide et d’écoute. <strong>Du lundi au vendredi, entre 11h et 17h</strong>, des intervenantes assurent la permanence du centre de jour/site fixe. Elles accompagnent aussi les personnes rencontrées dans leurs démarches, et ce en continuité avec le travail de rue.</p>
+    <p><a href="http://www.pactderue.org/fr/services/">http://www.pactderue.org/fr/services/</a></p>
+</section>
+
+<h2 class="text-note">Lois et droit</h2><hr>
+<section class="texte-accueil text-link">
+    <p><a href="https://educaloi.qc.ca/">https://educaloi.qc.ca/</a>: Ressource sur les lois au Québec</p>
+    <p style="font-size: large;"><a href="https://ajbm.qc.ca/services-au-public/parlons-droit/">Jeune Barreau de Montréal (Youth bar of Montreal):</a> Si tu es âgé.e entre 12 et 21 ans, PARLONS DROIT est un service qui te permet de parler gratuitement à un avocat bénévole (date et heure convenues entre l’avocat et toi) sur toute question de nature juridique. Tu peux ainsi poser des questions concernant les sujets qui te préoccupent que ce soit le travail, le logement, la drogue, la famille, etc. L’avocat bénévole pourra t’orienter vers les ressources juridiques appropriées ou tout simplement t’offrir des pistes de solution. Tu peux faire une demande de consultation en remplissant le formulaire d’inscription ou en composant le 514 954-3446.</p>
+    <br>
+    <p>Pour connaître davantage de ressources plus près de chez vous, vous pouvez aussi téléphoner à Info-Santé au 811 ou le CLSC de votre secteur!</p>
+    <ul><li><strong>N’hésite pas à appeler le 911 si tu te sens en danger!</strong></li></ul>
+</section>
+
+<h2 class="text-note">Trouble alimentaire:</h2><hr>
+<section class="texte-accueil text-link">
+    <ul><li><strong>Aneb</strong></li></ul>
+    <p>Services de soutien et ligne d’écoute pour les personnes souffrant d’un trouble alimentaire de près ou de loin.</p>
+    <p>1 800 630-0907514 630-0907</p>
+    <p>Anebquebec.com</p>
+</section>
+
+<h2 class="text-note">Sexualité globale:</h2><hr>
+<section class="texte-accueil text-link">
+    <p><strong>Le sexe et moi: </strong>Site web regroupant des guides et informations sur la santé sexuelle</p>
+    <p><a href="https://www.sexandu.ca/fr/">https://www.sexandu.ca/fr/</a></p>
+    <p><a href="https://www.sexandu.ca/fr_sos/">https://www.sexandu.ca/fr_sos/</a>: <em><u>« SOS Reprenez le rythme » </u></em>: Guide de contraception en cas d’oubli</p>
+    <ul><li><strong>Grossesse-Secours:</strong> Service d’écoute, d’accueil et d’information pour toute personne qui vit une situation liée à la grossesse, s’inquiète face à l’éventualité d’une grossesse ou qui se questionne au sujet de la contraception. Il y a également une friperie communautaire et tests de grossesse.</li></ul>
+    <p>Téléphone: 514 271-0554</p>
+    <ul>
+    <li><strong><em>Portail VIH/sida du Québec</em>:</strong><br>informations sur les ITSS (<a href="https://pvsq.org/">www.pvsq.org</a>)</li>
+    <li><strong>Sexplique: </strong>Site d’informations sur la sexualité (<a href="https://sexplique.org/">https://sexplique.org/</a>)</li>
+    </ul>
+    <p><strong>Rubriques sur la sexualité:</strong><a href="https://les3sex.com/fr">https://les3sex.com/fr</a></p>
+</section>
+
+<h2 class="text-note text-link"><a href="https://aidezmoisvp.ca/app/fr/">AidezMoiSVP.ca</a>:</h2><hr>
+<section class="texte-accueil text-link">
+    <ul>
+    <li>Si tu as des ennuis à cause d’une photo ou d’une vidéo à caractère sexuel qui circule auprès de tes pairs ou si tu connais quelqu’un (un.e ami, un.e autre jeune, ton frère, ta sœur) dans une telle situation.</li>
+    </ul>
+    <p><strong>Info aide violence sexuelle</strong></p>
+    <ul>
+    <li>Service téléphonique provincial : <a href="https://infoaideviolencesexuelle.ca/">https://infoaideviolencesexuelle.ca/</a></li>
+    </ul>
+    <p>Ligne-ressource provinciale pour les victimes d’agression sexuelle: pour les victimes de tout âge, leurs proches et le personnel en intervention.</p>
+    <p><strong>CALACS: <a href="http://rqcalacs.qc.ca/calacs.php">http://rqcalacs.qc.ca/calacs.php</a></strong></p>
+    <ul><li>Services gratuits pour les personnes vivant des conséquences des agressions à caractère sexuel</li></ul>
+    <p><strong>Cliniques jeunesses: </strong>Services gratuits offert dans divers CLSC pour les jeunes de 12 à 24 ans. Tu peux échanger avec une infirmière, un travailleur social ou un médecin. <strong>À partir de 14 ans, tu peux avoir recours à ces services sans le dire à tes parents!</strong></p>
+    <h4>Services offerts</h4>
+    <ul>
+    <li>Évaluation et conseils sur la contraception</li>
+    <li>Test de grossesse et pilule d’urgence pour éviter une grossesse</li>
+    <li>Accompagnement et référence pour une demande d’avortement</li>
+    <li>Dépistage et traitement des infections transmises sexuellement et par le sang (ITSS)</li>
+    <li>Information et conseils sur les relations amoureuses</li>
+    <li>Référence médicale ou psychosociale</li>
+    </ul>
+    <p><a href="https://ciusss-estmtl.gouv.qc.ca/soins-et-services/adolescent/clinique-jeunesse">https://ciusss-estmtl.gouv.qc.ca/soins-et-services/adolescent/clinique-jeunesse</a></p>
+    <p><strong>Aire ouverte: </strong>Services de soutien pour les jeunes de 12 à 25 ans</p>
+    <p>Aire ouverte offre différents services adaptés à la réalité des jeunes de 12 à 25 ans. C’est possible d’y obtenir, notamment, des services en santé mentale ou physique, avec ou sans rendez-vous. Sur place, des conseils pour les études, le travail, le logement ou des renseignements sur l’aide financière et juridique sont aussi donnés.</p>
+    <p><a href="https://www.quebec.ca/sante/trouver-une-ressource/aire-ouverte">https://www.quebec.ca/sante/trouver-une-ressource/aire-ouverte</a></p>
+    <p><strong>L’infirmière de ton école: </strong>Elle offre des moyens de contraception et de protection des ITSS, des tests de grossesses et des dépistages d’ITSS (infections transmissibles sexuellement et par le sang)</p>
+</section>
+
+<h2 class="text-note">Lgbtq+</h2><hr>
+<section class="texte-accueil text-link">
+    <p><u><strong>Sites internet avec informations:</strong></u></p>
+    <ul><li><strong>Alterhéros:</strong>
+    <br><br>
+    <em>Pose ta question! </em>est un site d’entraide dédié à la démystification des orientations sexuelles et de la pluralité des genres.
+    <br><br><a href="https://alterheros.com/pose-ta-question/"><em>https://alterheros.com/pose-ta-question/</em></a></li>
+    <li><strong>Interligne:</strong>
+    <br><br>Interligne est un service en ligne composé d’une ligne d’écoute par texto et téléphone 24h sur 24. Ils offrent des suivis de relation d’aide en visio-conférence aux jeunes de 14 ans et plus! <a href="https://interligne.co/nos-programmes/">interligne.co</a>
+    <br><br><a href="https://interligne.co/nos-programmes/">https://interligne.co/nos-programmes/</a></li>
+    <li><strong>Jeunes identités créatives:</strong><br>
+        Site internet comportant des ressources éducatives sur la diversité de genre et un bottin de services adaptés aux personnes fluides dans le genre, par région.
+    <br><a href="https://jeunesidentitescreatives.com/services">https://jeunesidentitescreatives.com/services<br>
+    </a><a href="https://jeunesidentitescreatives.com/ressources">https://jeunesidentitescreatives.com/ressources</a></li>
+    <li><strong>Projet 10 :</strong><br>
+    Ressources, service d’écoute, activités de groupe, etc.<br>
+    <a href="https://p10.qc.ca/fr/">https://p10.qc.ca/fr/</a></li>
+    </ul>
+    <p><strong><u>Bibliothèque LGBTQ+</u></strong></p><ul>
+    <li><strong>Centre communautaire LGBT+ de Montréal (2075 rue Plessis, bureau 110, Montréal):<br>
+    </strong>Parmi les plus importantes bibliothèques LGBTQ+ au Canada et dans la francophonie.<br>
+    Ouverte du lundi au jeudi, de 14h à 18h.<br>
+    Pour plus d’informations: <a href="https://ccglm.org/bibliotheque/">https://ccglm.org/bibliotheque/</a></li></ul>
+    <p><strong><u>Articles d’affirmation de genre:</u></strong></p> 
+    <ul>
+    <li><strong>Projet 10 :</strong><br>
+    <u>Divers articles d’affirmation de genre offerts sur une base <em>pay what you can</em>.</u> Service disponible en ligne seulement, à Montréal, pour les jeunes de 14-25 ans, de familles à faible revenu.<br>
+    <a href="https://p10.qc.ca/fr/gender-gear-2/">https://p10.qc.ca/fr/gender-gear-2/<br>
+    </a><u>Service d’échange de vêtements et de maquillage pour les jeunes.</u><br>
+    <a href="https://p10.qc.ca/fr/materials/#exchange">https://p10.qc.ca/fr/materials/#exchange</a></li>
+    <li><strong>DiverGens :</strong><br>
+    Leur envoyer un courriel pour s’informer de leurs services et commander des articles d’affirmation de genre.<br>
+    <a href="https://www.diversgens.org/nous-contacter">https://www.diversgens.org/nous-contacter</a></li>
+    <li><strong>Jeunesse Lambda (1575 rue Atateken, Montréal):</strong></li>
+    </ul>
+    <p><u>Visiter leurs soirées hebdomadaires les vendredis de 18h à 21h: </u>possibilité d’essayer les articles sur place.<br>
+    <u>Écrire un courriel</u>: intervention@jeunesselambda.com<br>
+    Pour plus d’informations: <a href="https://www.jeunesselambda.com/fr/programme-daccessibilit-aux-accessoires-et-protheses">https://www.jeunesselambda.com/fr/programme-daccessibilit-aux-accessoires-et-protheses</a></p>
+    <ul>
+    <li><strong>Centre de lutte contre l’oppression des genres (2110 rue Mackay, Montréal):</strong></li>
+    </ul>
+    <p>Pour binders (gilets de compression) seulement. Se présenter sur place, du lundi au jeudi, de 11h à 17h. Les binders se vendent au coût suggéré de 20 à 40$, mais personne ne sera refusé.e pour manque de fonds.<br>
+    Pour plus d’informations: <a href="https://desluttesgenres.org/promotion-des-droits-trans/">https://desluttesgenres.org/promotion-des-droits-trans/</a></p>
+    <ul>
+    <li><strong>Co-op de The Union for Gender Empowerment (680 Sherbrooke Ouest, local 150, Montréal):</strong><br>
+    Articles d’affirmation de genre (amplificateurs de poitrine, <em>packers</em>, <em>binders</em>, sous-vêtements féminins, boxers, etc.), produits menstruels réutilisables et outils pour <em>safer sex</em>. Sur une base <em>pay what you can</em>.<br>
+    Pour plus d’informations sur les produits, heures d’ouverture et faire une commande: <a href="https://theuge.org/services/co-op/">https://theuge.org/services/co-op</a> ou consulter leur page Facebook.</li>
+    <li><strong>Jeunes identités créatives:</strong><br>
+    Possibilité de tester divers articles d’affirmation de genre, d’être assisté.e par un.e membre du personnel et de repartir avec les articles désirés. Les contacter par courriel (<a href="mailto:services@contactgckc.com">services@contactgckc.com</a>) pour savoir comment se procurer des accessoires.</li>
+    </ul>
+    <p><strong><u>Transition légale:</u></strong></p>
+    <ul>
+    <li><strong>Centre de lutte contre l’oppression des genres (2110 rue Mackay, Montréal):</strong><br>
+    Il est possible de contacter leur Activiste en droits trans et éducatrice publique à <a href="mailto:educator@genderadvocacy.org">educator@genderadvocacy.org</a> , pour obtenir de l’aide dans les changements de nom et de mention de sexe. Ce service est offert aux citoyen.ne.s comme au non-citoyen.ne.s.<br>
+    Pour plus d’informations: <a href="https://desluttesgenres.org/promotion-des-droits-trans/">https://desluttesgenres.org/promotion-des-droits-trans/</a></li>
+    </ul><p><strong><u>Services en santé:</u></strong></p>
+    <ul>
+    <li><strong>Centre de santé Meraki (1-1445 rue Lambert-Closse, Montréal):</strong>
+    <br><br>Leur programme variance de genre offre des soins de santé, assistance, soutien et références vers des ressources communautaires pour des jeunes avec variance de genre et leurs familles; ces services sont offerts aux patients qui ont des questions à propos d’une transition sociale et médicale, ou aux familles qui souhaitent supporter les jeunes avec variance de genre dans des différents milieux (famille, academique, communauté).<br>
+    Pour plus d’informations sur les services et comment prendre rendez-vous: <a href="https://centremeraki.com/fr/programmes/programme-variance-de-genre/">https://centremeraki.com/fr/programmes/programme-variance-de-genre/</a></li>
+    <li><strong>À deux mains/Heads and Hands:</strong><br>
+    Offre différents services médicaux, légaux, de counseling, etc. Liste d’attente pour hormonothérapie.<br>
+    Pour plus d’informations: <a href="https://headandhands.ca/programs-services/">https://headandhands.ca/programs-services/</a></li>
+    <li><strong>Clinique Mauve:</strong><br>
+    Spécialisée pour les personnes racisées migrantes LGBTQI+ (notamment trans*). Cette clinique offre des soins médicaux, psychosociaux et psychothérapeutiques, en santé sexuelle et en santé mentale intégrée. Un service de traduction en plusieurs langues et de navigation par les pairs est disponible.<br>
+    Pour plus d’informations: <a href="https://sherpa-recherche.com/sherpa/projets-partenaires/clinique-mauve/">https://sherpa-recherche.com/sherpa/projets-partenaires/clinique-mauve/</a></li>
+    <li><strong>Clinique jeunesse du CLSC de Saint-Michel (3355, rue Jarry Est)<br>
+    </strong><u>Téléphone</u>: 514-722-3000, poste 5684<br>
+    <u>Prendre rendez-vous:</u>ca</li>
+    <li><strong>Transitionner en contexte québécois:</strong>
+    <br><br>Ce guide s’adresse aux personnes trans, non binaires et en questionnement, afin qu’elles puissent comprendre les différentes possibilités qui s’offrent à elles, fournir un consentement éclairé tout au long de leur transition médicale et défendre leur droit d’avoir accès aux procédures dont elles ont besoin.
+    <br><br><u>Guide de transition médicale</u>: <a href="https://transitionner.info/">https://transitionner.info/</a></li>
+    <li><strong>Clinique l’Actuel (Quartier latin et Centre-ville):</strong><br>
+    Liste d’attente pour hormonothérapie.<br>
+    Quartier latin: 1001 boul. de Maisonneuve Est, bureau 1130, Montréal.<br>
+    514-524-1001<br>
+    McGill: 407, rue McGill, bureau 900.<br>
+    514-787-0055</li>
+    <li><strong>Clinique l’Agora (1733 rue Berri, Montréal):</strong><br>
+    Liste d’attente pour hormonothérapie.
+    <br><br>438-844-7190</li>
+    <li><strong>Clinique Quorum (800 boul. de Maisonneuve Est suite RC-1, Montréal)</strong>
+    <br><br>Liste d’attente pour hormonothérapie.<br><br>514-360-0614<br><br><a href="mailto:info@cliniquequorum.com">info@cliniquequorum.com</a></li>
+    <li><strong>Jeunes identités créatives:</strong><br>
+    Liste de professionnel.le.s offrant des services thérapeutiques trans-inclusifs : <a href="https://jeunesidentitescreatives.com/services">https://jeunesidentitescreatives.com/services</a></li>
+    </ul>
+    <p><strong><u>Service d’accompagnement:</u></strong></p>
+    <ul>
+    <li><strong>Projet 10:</strong><br>
+    Possibilité de se faire accompagner à ses rendez-vous médicaux, aux bureaux d’assistance sociale, à d’autres organismes communautaires, etc.<br>
+    Pour plus d’informations: <a href="https://p10.qc.ca/fr/support/">https://p10.qc.ca/fr/support/</a></li>
+    <li><strong>Grands frères grandes soeurs de Montréal:</strong><br>
+    Mentorat LGBTQ2+ où un.e jeune de 6 à 21 ans est jumelé.e à un.e mentor.e, tous.tes deux appartenant à la communauté LGBTQ2+ (ou, dans le cas de lia jeune, en questionnement). Ce programme vise à offrir un modèle positif à l’enfant, à lia motiver et à l’accompagner.<br>
+    <u>Pour plus d’informations</u>:<a href="https://gfgsmtl.qc.ca/cause/diversite-inclusion/">https://gfgsmtl.qc.ca/cause/diversite-inclusion/</a><br>
+    <u>Pour inscrire un.e enfant</u>: <a href="https://gfgsmtl.qc.ca/cause/inscrire-enfant/">https://gfgsmtl.qc.ca/cause/inscrire-enfant/</a></li>
+    </ul>
+
+    <p><strong><u>Aide financière:</u></strong></p>
+    <ul>
+    <li><strong>Jeunes identités créatives:</strong><br>
+    Le volet bourse permet d’assister les familles et les jeunes de 14 ans+ en offrant des montants d’argent universels pour aider à couvrir, par exemple, les frais administratifs liés au changement de nom et de mention de sexe, s’offrir de la thérapie de masculinisation/féminisation de la voix, etc.<br>
+    <u>Pour les contacter</u>: <a href="mailto:services@contactgckc.com">services@contactgckc.com</a></li>
+    </ul>
+    <p><strong><u>Groupes de discussion, rencontres, etc.:</u></strong></p>
+    <ul>
+    <li><strong>Jeunesse Lambda:</strong><br>
+    Soirées hebdomadaires les vendredis de 18h à 21h, pour briser l’isolement! Vérifier leur horaire sur leur page Facebook ou Instagram.</li>
+    <li><strong>Projet 10 (virtuellement depuis la COVID):</strong><br>
+    <u>a. Rencontres gratuites pour les jeunes de 14-17 ans</u>, pour tisser des liens entre pair.e.s, faire de l’art et explorer des thèmes comme le genre, la sexualité, les relations, le consentement et les limites.</li>
+    </ul>
+    <p><ol>
+    <li><u> Camp d’été d’une fin de semaine pour les jeunes LGBTQIA+ de 12 à 25 ans.</u> C’est l’occasion pour les jeunes de se retrouver dans un endroit bilingue et sécuritaire, pour profiter de la nature et d’une panoplie d’activités et approfondir des liens avec des pair.e.s.</li>
+    </ol></p>
+    <p><u>Pour plus de détails sur les groupes de rencontre:</u> 514-989-0001 (appel ou texto), questions@p10.qc.ca</p>
+    <p><strong><u>Ressources pour personnes QTBIPOC (Queer et/ou trans et autochtones, noir.e.s ou racisé.e.s):</u></strong></p>
+    <ul>
+    <li><strong>Full Circle (Projet 10)</strong><br>
+    Vise à créer des espaces et des activités où les jeunes racisé.e.s trans et queer peuvent tisser des liens, développer de nouveaux intérêts, de nouvelles compétences et s’amuser.<br>
+    <u>Pour plus d’informations:</u> <a href="https://p10.qc.ca/fr/full-circle/">https://p10.qc.ca/fr/full-circle/</a></li>
+    </ul>
+    <p><strong>ASTT(e)Q:</strong></p>
+    <p>ASTT(e)Q fournit des services-conseils gratuits et confidentiels aux personnes trans, aux personnes qui se questionnent sur leur identité sexuelle, ainsi qu’à leurs proches et aux membres de leur famille.Pour et par les trans, organisme offrant beaucoup de services dont accompagnement, soutien …</p>
+    <p style="padding-bottom: 40px;"><a href="http://www.astteq.org/fr/soutien.html">http://www.astteq.org/fr/soutien.html</a></p>
+</section>
+
+    <!-- bas de la Page-->
+     <hr>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div class="text-link"><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon" class="fa-brands fa-tiktok"></i></a>
+          </p>
+            <!-- fin bas de la Page-->
+    </body>
+</html><!DOCTYPE html>
