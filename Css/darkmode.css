@@ -53,15 +53,19 @@ body.dark-mode .site-header {
   transform: rotate(20deg);
 }
 
-#linkIcon {
+#linkIcon, #linkIcon_ticktok {
   color: rgb(0, 0, 106);
 }
 
-body.dark-mode #linkIcon {
+body.dark-mode #linkIcon, body.dark-mode #linkIcon_ticktok {
   color: yellow;
 }
 
 #linkIcon:hover {
+  transform: rotate(20deg);
+}
+#linkIcon_ticktok:hover { 
+  color: #000000;
   transform: rotate(20deg);
 }
 
