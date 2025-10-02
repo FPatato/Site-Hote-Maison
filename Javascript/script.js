@@ -71,3 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
     navBar.classList.toggle('nav-open');
   });
 });
+
+document.addEventListener('click', (e) => {
+    const clickedInsideMenu = navBar.contains(e.target);
+    const clickedToggle = toggleBtn.contains(e.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      navLinks.classList.remove('open');
+      navBar.classList.remove('nav-open');
+    }
+  });
