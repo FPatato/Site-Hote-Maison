@@ -83,4 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
       navBar.classList.remove('nav-open');
     }
   });
+
+  // Ferme le menu si on scrolle
+  window.addEventListener('scroll', () => {
+    navLinks.classList.remove('open');
+    navBar.classList.remove('nav-open');
+  });
 });
